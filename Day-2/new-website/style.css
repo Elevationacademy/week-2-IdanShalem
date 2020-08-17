@@ -1,0 +1,48 @@
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 3fr 15fr 2fr;
+}
+
+#head {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #028090;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f0f3bd;
+}
+
+#nav{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+#table{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #02c39a;
+    justify-self: center;
+    align-self: center;
+    grid-gap: 10px;
+}
+
+.tables{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    padding: 10px;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+#footer{
+    background-color: #05668d;
+}
+p{
+    padding: 5px;
+}

@@ -1,5 +1,5 @@
 #container{
-    height: 100vh;
+    height: 98vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 13fr 1fr;
@@ -53,7 +53,6 @@
     justify-self: start;
     align-self: center;
     background-color: rgb(190, 190, 190);
-    height: 25%;
     border-radius: 10px;
     margin: 10px;
 }
@@ -65,26 +64,21 @@
     justify-self: end;
     align-self: center;
     background-color: rgb(70, 197, 98);
-    height: 25%;
     border-radius: 10px;
     margin: 10px;
 }
 
 .text-msg{
     grid-area: t;
-    margin-top: 3px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 15px;
+    align-self: center;
+    margin: 5px;
     font-size: 1.2em;
 }
 
 .hour-msg{
     grid-area: h;
-    margin-top: 12px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 2px;
+    align-self: end;
+    margin: 5px;
     font-size: 0.8em;
 }
 
