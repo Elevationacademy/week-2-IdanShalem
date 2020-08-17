@@ -1,0 +1,102 @@
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 13fr 1fr;
+    grid-template-areas: 
+    "b c"
+    "b t"
+}
+
+#friends-bar{
+    display:  grid;
+    grid-template-rows: 1fr 5fr;
+    grid-area: b;
+    background-color: rgb(134, 69, 160);
+    padding-top: 10%;
+}
+
+#friends-head{
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 3%;
+}
+#friends-clickers{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.friends{
+    background-color: rgb(164, 87, 209);
+    width: 90%;
+    padding-left: 2%;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#chat-box{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    grid-area: c;
+    background-color: rgb(224, 224, 224);
+}
+
+.friend-msg{
+    display: grid;
+    grid-template-areas: "t h";
+    font-family: 'Indie Flower', cursive;
+    justify-self: start;
+    align-self: center;
+    background-color: rgb(190, 190, 190);
+    height: 25%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.my-msg{
+    display: grid;
+    grid-template-areas: "t h";
+    font-family: 'Indie Flower', cursive;
+    justify-self: end;
+    align-self: center;
+    background-color: rgb(70, 197, 98);
+    height: 25%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.text-msg{
+    grid-area: t;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.hour-msg{
+    grid-area: h;
+    margin-top: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    font-size: 0.8em;
+}
+
+#text-line{
+    grid-area: t;
+    background-color: rgb(134, 69, 160);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#send-button{
+    background-color: rgb(134, 69, 160);
+    color: white;
+    border: none;
+}
