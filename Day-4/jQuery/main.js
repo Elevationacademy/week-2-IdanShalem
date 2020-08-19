@@ -28,6 +28,9 @@ $('.item').click(function(){
     if(inStock){
         $('#cart').append(`<div class=cart-item>${$(this).text()}</div>`)
     }
+    $('#cart').on('click', '.cart-item', function(){
+        $(this).remove()
+    })
 })
 
 // Ex-5
