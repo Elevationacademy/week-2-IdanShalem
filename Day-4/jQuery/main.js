@@ -42,12 +42,12 @@ const fruits = [
     { name: "Pumpkin", color: "orange" }
 ]
 
-for(fruit of fruits){
+for(let fruit of fruits){
     $('#basket').append(`<div class='${fruit.color}'>${fruit.name}</div>`)
 }
 
 //extension
-for(span of $('span')){
+for(let span of $('span')){
     $(span).addClass('picker')
     $(span).css('background-color', `${$(span).data().color}`)
 }
